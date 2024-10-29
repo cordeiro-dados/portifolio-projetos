@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/modal.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Botão que abre o modal -->
+<button onclick="openModal()" id="modal-button">Abrir relatório</button>
+
+<!-- Modal -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <!-- Título do modal -->
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Relatório Power BI</h2>
+    </div>
+    <!-- Corpo do modal -->
+    <div class="modal-body">
+      <!-- Iframe do Power BI -->
+      
+      <iframe title="AnaliseLogistica" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=d2107f5a-46a0-4e59-a106-1aa0aebee833&autoAuth=true&ctid=0bbcc1d0-3702-4be2-bd77-95027a38a0af" frameborder="0" allowFullScreen="true"></iframe>
+    </div>
+  </div>
+</div>
+
+<script src="assets/js/modal.js"></script>
+</body>
+</html>

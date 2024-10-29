@@ -1,0 +1,139 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+--header-height: 3.5rem;
+
+/*========== Colors ==========*/
+/*Color mode HSL(hue, saturation, lightness)*/
+/*
+      Purple: hsl(250, 66%, 75%)
+      Blue: hsl(207, 90%, 72%)
+      Pink: hsl(356, 66%, 75%)
+      Teal: hsl(174, 63%, 62%)
+*/
+  --first-hue: 250;
+  --sat: 66%;
+  --lig: 75%;
+  --second-hue: 219;
+
+  --first-color: hsl(var(--first-hue), var(--sat), var(--lig));
+  --first-color-alt: hsl(var(--first-hue), var(--sat), 71%); /* -4% */
+  --title-color: hsl(var(--second-hue), 15%, 95%);
+  --text-color: hsl(var(--second-hue), 8%, 75%);
+  --text-color-light: hsl(var(--second-hue), 4%, 55%);
+  --body-color: hsl(var(--second-hue), 48%, 8%);
+  --container-color: hsl(var(--second-hue), 32%, 12%);
+
+/*========== Font and typography ==========*/
+/*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: 'Poppins', sans-serif;
+  --biggest-font-size: 1.75rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+  --smaller-font-size: .75rem;
+  --tiny-font-size: .625rem;
+
+/*========== Font weight ==========*/
+  --font-medium: 500;
+  --font-semibold: 600;
+
+/*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
+}
+
+/* Responsive typography */
+@media screen and (min-width: 968px) {
+  :root {
+    --biggest-font-size: 2.5rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
+  }
+}
+
+/* Estilo do modal */
+#modal_logistica,
+#modal_vendas,
+#modal_fluxo {
+  display: none; /* O modal fica oculto por padrão */
+  position: fixed; /* O modal fica fixo na tela */
+  z-index: 999; /* O modal fica sobre os outros elementos da página */
+  padding-top: 100px; /* Espaçamento do topo do modal */
+  left: 0;
+  top: 0;
+  width: 100%; /* Largura do modal */
+  height: 100%; /* Altura do modal */
+  overflow: auto; /* Adiciona rolagem ao modal se necessário */
+  background-color: hsla(var(--second-hue), 28%, 16%, 0.7); /* Cor de fundo do modal com transparência */
+}
+
+/* Estilo do conteúdo do modal */
+.modal-content {
+  background-color: var(--body-color);
+  margin: auto;
+  padding: 20px;
+  border-radius: 1.5rem;
+  width: 90%; /* Largura do conteúdo do modal */
+  /*max-width: 55%;*/
+}
+
+/* Estilo do cabeçalho do modal */
+.modal-header {
+  font-size: var(--h3-font-size);
+  color: var(--first-color);
+  margin-bottom: 1rem;
+}
+
+
+/* Estilo para o corpo do modal */
+.modal-body {
+  height: auto; /* Altura automática */
+  max-height: 100%; /* Altura máxima */
+  overflow: auto; /* Exibe rolagem quando o conteúdo for maior que a altura máxima */
+}
+
+
+/* Estilo para o iframe */
+/* Estilo para o iframe */
+.modal-content iframe {
+  display: block; /* Transforma o iframe em um bloco */
+  margin: 0 auto; /* Centraliza horizontalmente */
+  border: none;
+}
+
+
+
+/* Estilo do botão fechar */
+.closeModal {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.closeModal:hover,
+.closeModal:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+@media (max-width: 1024px) { /* Aplica o estilo a partir de 992px */
+  .modal-content {
+    width: 55%; /* Largura */
+  }
+}
+
+  

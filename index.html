@@ -658,8 +658,10 @@
                 <div class="work__filters">
                     <span class="work__item active-work" data-filter='all'>Todos</span>
                     <span class="work__item" data-filter='.logistica'>Faturamento</span>
-                    <span class="work__item" data-filter='.vendas'>Vendas</span>
+                    <span class="work__item" data-filter='.vendas'>Comercial</span>
                     <span class="work__item" data-filter='.fluxo'>Fluxo de Caixa</span>
+                    <span class="work__item" data-filter='.fluxo'>DRE - Controladoria</span>
+                    <span class="work__item" data-filter='.fluxo'>RH</span>
                 </div>
 
                 <div class="work__container container grid">
@@ -715,7 +717,7 @@
                             <!-- Corpo do modal -->
                             <div class="modal-body">
                                 <!-- Iframe do Power BI -->
-                                <iframe title="PROJETO CURSO FIGMA FINAL" width="1024" height="1060" src="https://app.powerbi.com/view?r=eyJrIjoiZTM3YzM1ZmMtZWNlNC00ODE5LWExNWMtYzNmNDVmNDU4MGU0IiwidCI6IjgyYmFhZjcyLWNmM2QtNDljZS05NGE1LTJlYjFlNGJmMmEyOCJ9" frameborder="0" allowFullScreen="true"></iframe>
+                                <iframe title="PROJETO CURSO FIGMA FINAL" width="1140" height="541.25" src="https://app.powerbi.com/view?r=eyJrIjoiZTM3YzM1ZmMtZWNlNC00ODE5LWExNWMtYzNmNDVmNDU4MGU0IiwidCI6IjgyYmFhZjcyLWNmM2QtNDljZS05NGE1LTJlYjFlNGJmMmEyOCJ9" frameborder="0" allowFullScreen="true"></iframe>
                             </div>
                             </div>
                         </div>
@@ -744,7 +746,65 @@
                             <!-- Corpo do modal -->
                             <div class="modal-body">
                                 <!-- Iframe do Power BI -->
-                                <iframe title="DashboardPronto" width="1280" height="680" src="https://app.powerbi.com/reportEmbed?reportId=7c0d232d-71fe-44b7-85f0-d3baba20dd4d&autoAuth=true&ctid=0bbcc1d0-3702-4be2-bd77-95027a38a0af" frameborder="0" allowFullScreen="true"></iframe>
+                                <iframe title="Fluxo De Caixa" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=82f378e9-9141-4bbf-89f3-b1217fab64e9&autoAuth=true&ctid=82baaf72-cf3d-49ce-94a5-2eb1e4bf2a28" frameborder="0" allowFullScreen="true"></iframe>
+                            </div>
+                            </div>
+                        </div>
+  
+                    </div>
+
+                    <div class="work__card mix dre">
+                        <img src="assets/img/rh.png" alt="" class="work__img">
+                      
+                        <h3 class="work__title">DRE</h3>
+                        
+                        <!-- Botão para abrir o modal -->
+                        <a href="#" class="work__button" onclick="openModalFluxo(event)">
+                            Veja <i class='bx bx-right-arrow-alt work__icon' ></i>
+                        </a>
+                        
+                        <!-- Modal -->
+                        <div id="modal_dre" class="modalWork">
+                            <!-- Conteúdo do modal -->
+                            <div class="modal-content">
+                            <!-- Título do modal -->
+                            <div class="modal-header">
+                                <span class="closeModal" onclick="closeModalFluxo()">&times;</span>
+                                <h2>DRE</h2>
+                            </div>
+                            <!-- Corpo do modal -->
+                            <div class="modal-body">
+                                <!-- Iframe do Power BI -->
+                                <iframe title="Business Case - Dashboard Controladoria" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=94da9112-e3fe-43ad-a8c5-d2e581110b9a&autoAuth=true&ctid=82baaf72-cf3d-49ce-94a5-2eb1e4bf2a28" frameborder="0" allowFullScreen="true"></iframe>
+                            </div>
+                            </div>
+                        </div>
+  
+                    </div>
+
+                    <div class="work__card mix rh">
+                        <img src="assets/img/dre.png" alt="" class="work__img">
+                      
+                        <h3 class="work__title">RH</h3>
+                        
+                        <!-- Botão para abrir o modal -->
+                        <a href="#" class="work__button" onclick="openModalFluxo(event)">
+                            Veja <i class='bx bx-right-arrow-alt work__icon' ></i>
+                        </a>
+                        
+                        <!-- Modal -->
+                        <div id="modal_rh" class="modalWork">
+                            <!-- Conteúdo do modal -->
+                            <div class="modal-content">
+                            <!-- Título do modal -->
+                            <div class="modal-header">
+                                <span class="closeModal" onclick="closeModalFluxo()">&times;</span>
+                                <h2>RH</h2>
+                            </div>
+                            <!-- Corpo do modal -->
+                            <div class="modal-body">
+                                <!-- Iframe do Power BI -->
+                                <iframe title="Dashboard RH" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=d13294f9-67d7-462f-af64-d46b815a1c51&autoAuth=true&ctid=82baaf72-cf3d-49ce-94a5-2eb1e4bf2a28" frameborder="0" allowFullScreen="true"></iframe>
                             </div>
                             </div>
                         </div>

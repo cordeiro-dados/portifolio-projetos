@@ -64,7 +64,9 @@
 /* Estilo do modal */
 #modal_logistica,
 #modal_vendas,
-#modal_fluxo {
+#modal_fluxo,
+#modal_dre,
+#modal_rh {
   display: none; /* O modal fica oculto por padrão */
   position: fixed; /* O modal fica fixo na tela */
   z-index: 999; /* O modal fica sobre os outros elementos da página */
